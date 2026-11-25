@@ -36,7 +36,7 @@ export const projectsData: Project[] = [
     allCategories: ["Web Applications", "Backend Development", "Software Testing", "Full-Stack Development"],
     primarySource: "Backend CV, Web Developer CV & SQT CV",
     technologies: ["PHP", "JavaScript", "MySQL", "HTML5", "CSS3", "Selenium IDE", "Vercel"],
-    description: "A web-based metro rail ticketing application implementing MVC architecture, route distance-based fare calculation, and comprehensive manual and automated SQA testing.",
+    description: "A web-based metro rail ticketing application implementing MVC architecture, route distance-based fare calculation, ticket reservation, and automated testing.",
     longDescription:
       "Developed a role-based web-based ticket management system using PHP and MySQL with Passenger, Staff, and Admin workflows. Performed manual functional testing and UI automation testing using Selenium IDE to validate authentication, profile management, ticket booking, payment, admin, and staff workflows. Designed and executed functional test cases and verified application behavior through expected and actual results, including database verification using phpMyAdmin. Documented the testing activities in a formal Software Test Plan, covering test cases, testing approach, pass/fail criteria, test deliverables, testing schedule, and risk management.",
     features: [
@@ -53,7 +53,7 @@ export const projectsData: Project[] = [
       "Relational MySQL Schema with Transactional Integrity verified via phpMyAdmin",
       "Live Vercel Deployment with Fast Booking Flows (https://metro-rail-dhaka.vercel.app)"
     ],
-    githubUrl: "https://github.com/SadiaTabas",
+    githubUrl: "https://github.com/SadiaTabas/Dhaka-Metro-Rail",
     liveUrl: "https://metro-rail-dhaka.vercel.app",
     isClientProject: false,
     imagePlaceholderText: "Dhaka Metro Rail Ticketing UI"
@@ -85,7 +85,7 @@ export const projectsData: Project[] = [
       "Asynchronous Data Ingestion via Maatwebsite Excel Parser",
       "Live Deployment on Vercel: https://sd-inventory.vercel.app/"
     ],
-    githubUrl: "https://github.com/SadiaTabas",
+    githubUrl: "https://github.com/SadiaTabas/SD-Inventory-System",
     liveUrl: "https://sd-inventory.vercel.app/",
     isClientProject: false,
     imagePlaceholderText: "SD Inventory System Dashboard"
@@ -117,7 +117,7 @@ export const projectsData: Project[] = [
       "Stateless JWT Bearer Authentication with Payload Validation",
       "End-to-End Type Safety with TypeScript Interfaces across Backend and Frontend"
     ],
-    githubUrl: "https://github.com/SadiaTabas",
+    githubUrl: "https://github.com/SadiaTabas/Medicore_Hospital_Management",
     isClientProject: false,
     imagePlaceholderText: "MediCore Doctor Module Portal"
   },
@@ -148,7 +148,7 @@ export const projectsData: Project[] = [
       "Microsoft SQL Server Normalized Schema (3NF) for Orders, Tables, and Menus",
       "Responsive Bootstrap 5 UI bound seamlessly with Razor View Engine"
     ],
-    githubUrl: "https://github.com/SadiaTabas",
+    githubUrl: "https://github.com/SadiaTabas/Restaurant-Management-System",
     isClientProject: false,
     imagePlaceholderText: "Restaurant Management System UI"
   },
@@ -179,7 +179,7 @@ export const projectsData: Project[] = [
       "Comprehensive SQA Test Matrix for Permission Boundary Enforcement",
       "Optimized Aggregate Queries for High-Performance Dashboard Reporting"
     ],
-    githubUrl: "https://github.com/SadiaTabas",
+    githubUrl: "https://github.com/SadiaTabas/DonationManagementSystem",
     isClientProject: false,
     imagePlaceholderText: "Donation System Architecture & QA"
   },
