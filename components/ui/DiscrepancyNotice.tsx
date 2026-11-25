@@ -18,7 +18,7 @@ export default function DiscrepancyNotice() {
             Source Documentation Notice:
           </span>
           <span className="text-[#666666]">
-            One CV consolidated.
+            Verified from official curriculum vitae and academic records.
           </span>
         </div>
 
@@ -27,7 +27,7 @@ export default function DiscrepancyNotice() {
           className="inline-flex items-center gap-1.5 text-[#FF8500] hover:text-[#E67700] font-bold transition-colors text-left"
           aria-expanded={isOpen}
         >
-          <span>{isOpen ? "Hide Cross-CV Verification Notes" : "View Cross-CV Verification Notes"}</span>
+          <span>{isOpen ? "Hide Documentation Notes" : "View Documentation Notes"}</span>
           {isOpen ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
         </button>
       </div>

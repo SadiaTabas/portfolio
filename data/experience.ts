@@ -22,9 +22,9 @@ export const internshipInfo = {
   company: "Dcastalia Limited (Webcare Studio)",
   location: "Dhaka, Bangladesh",
   primaryTitle: "Web Development Intern",
-  secondaryTitle: "Software Development & Quality Assurance Intern",
-  periodDisplay: "September 2026 – November 2026",
-  statusNote: "Web Developer & SQT CVs note completed 3-month internship (Sep–Nov 2026); Backend CV note lists Sep–Dec 2026 (On-going).",
+  secondaryTitle: "Software Development & Quality Assurance",
+  periodDisplay: "September 2026 – Present",
+  statusNote: "Web Development Intern at Dcastalia Limited (September 2026 – Present).",
   scopeSummary:
     "Engineered full-stack features, Laravel CMS order/delivery workflows, and responsive Next.js/React/TypeScript interfaces across 7+ production client platforms (Akhter Properties, Rock Energy, Concord Ready Mix, ACE Advisory, SD Inventory System, and Solution 360)."
 };
@@ -33,7 +33,7 @@ export const responsibilityCategories: ResponsibilityCategory[] = [
   {
     id: "full-stack",
     title: "A. Full-Stack Web Development",
-    sourceCV: "Web Developer CV & Backend CV",
+    sourceCV: "Full-Stack & Web Engineering",
     description: "End-to-end feature delivery across production client platforms combining dynamic frontend interfaces and robust backend integration.",
     items: [
       "Developed and enhanced full-stack features across multiple production client platforms.",
@@ -47,7 +47,7 @@ export const responsibilityCategories: ResponsibilityCategory[] = [
   {
     id: "backend",
     title: "B. Backend Development",
-    sourceCV: "Backend CV & Web Developer CV",
+    sourceCV: "Backend Architecture & APIs",
     description: "Engineered scalable server-side logic, order workflows, and database interactions across multiple technologies.",
     items: [
       "Developed Laravel CMS workflows for e-commerce platforms handling order tracking and delivery statuses.",
@@ -60,7 +60,7 @@ export const responsibilityCategories: ResponsibilityCategory[] = [
   {
     id: "sqa",
     title: "C. Software Quality Assurance",
-    sourceCV: "SQT CV",
+    sourceCV: "Software Quality Assurance & Testing",
     description: "Comprehensive software verification, regression testing, automated UI validation, and security auditing.",
     items: [
       "Executed end-to-end functional and regression testing across 7+ live production platforms.",
@@ -76,7 +76,7 @@ export const responsibilityCategories: ResponsibilityCategory[] = [
   {
     id: "seo-performance",
     title: "D. Technical SEO & Performance",
-    sourceCV: "Web Developer CV & SQT CV",
+    sourceCV: "Technical SEO & Performance",
     description: "Search engine visibility engineering, structured data compliance, and performance remediation.",
     items: [
       "Implemented dynamic XML sitemaps for multi-level client website hierarchies.",
@@ -90,7 +90,7 @@ export const responsibilityCategories: ResponsibilityCategory[] = [
   {
     id: "deployment",
     title: "E. Deployment & Collaboration",
-    sourceCV: "Web Developer CV, Backend CV & SQT CV",
+    sourceCV: "DevOps & CI/CD Pipelines",
     description: "Modern DevOps workflows, continuous integration, and version control collaboration.",
     items: [
       "Managed Git and GitLab version control across multiple client feature branches.",

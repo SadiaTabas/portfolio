@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Download, Menu, X, ArrowUpRight, FileText } from "lucide-react";
+import { Download, Menu, X, ArrowUpRight } from "lucide-react";
 import { profileData } from "@/data/profile";
 
 const navLinks = [
@@ -38,7 +38,7 @@ export default function Navbar() {
     setMobileMenuOpen(false);
   }, [pathname]);
 
-  const backendCv = profileData.cvDownloads[0];
+  const primaryCv = profileData.cvDownloads[0];
 
   return (
     <header
@@ -95,14 +95,14 @@ export default function Navbar() {
             })}
           </nav>
 
-          {/* Right: Direct Download CV Button & Mobile Toggle */}
+          {/* Right: Direct Download CV Action & Mobile Toggle */}
           <div className="flex items-center gap-3">
-            {/* Direct Download Backend CV */}
+            {/* Direct Download CV Button */}
             <a
-              href={backendCv.path}
-              download={backendCv.fileName}
+              href={primaryCv.path}
+              download={primaryCv.fileName}
               className="hidden sm:inline-flex items-center gap-2 bg-[#171717] text-white px-4 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase hover:bg-[#FF8500] transition-all duration-300 shadow-sm active:scale-95"
-              title="Download Backend Development CV (PDF)"
+              title="Download CV (PDF)"
             >
               <Download className="w-3.5 h-3.5" />
               <span>Download CV</span>
@@ -155,13 +155,13 @@ export default function Navbar() {
 
           <div className="mt-5 pt-4 border-t border-[#E3DDD6]">
             <a
-              href={backendCv.path}
-              download={backendCv.fileName}
+              href={primaryCv.path}
+              download={primaryCv.fileName}
               className="flex items-center justify-between px-4 py-3 rounded-xl bg-white border border-[#E3DDD6] text-xs font-bold text-[#171717] hover:border-[#FF8500] shadow-xs"
             >
               <span className="flex items-center gap-2">
                 <Download className="w-4 h-4 text-[#FF8500]" />
-                <span>Download Backend Development CV</span>
+                <span>Get My CV</span>
               </span>
               <span className="text-[10px] text-[#FF8500] font-semibold">PDF</span>
             </a>

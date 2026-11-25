@@ -44,7 +44,7 @@ export default function SkillsPage() {
             <span className="text-[#FF8500]">TOOLKIT.</span>
           </h1>
           <p className="text-sm text-[#666666] max-w-2xl leading-relaxed">
-            Consolidating the full engineering stack from my Web Developer, Backend, and Software Quality Assurance CVs without arbitrary skill percentages.
+            Consolidating the full engineering stack across frontend development, backend API architecture, databases, and software quality assurance without arbitrary skill percentages.
           </p>
         </div>
 

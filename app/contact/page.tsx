@@ -145,7 +145,7 @@ export default function ContactPage() {
                 RESUME ARCHIVES
               </span>
               <h4 className="text-base font-bold text-[#171717] mb-4">
-                Download Official CV PDF
+                Get My Official CV
               </h4>
               <div className="space-y-2">
                 {profileData.cvDownloads.map((cv) => (
@@ -159,7 +159,7 @@ export default function ContactPage() {
                       <Download className="w-4 h-4 text-[#FF8500] shrink-0" />
                       <div>
                         <span className="block text-xs font-bold text-[#171717] group-hover:text-[#FF8500]">
-                          {cv.title}
+                          Download CV
                         </span>
                         <span className="block text-[10px] text-[#777777] font-normal">
                           {cv.description}

@@ -87,7 +87,7 @@ export default function Footer() {
           {/* Col 3: CV Downloads */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold tracking-widest uppercase text-[#FF8500]">
-              Download Resume
+              Get My CV
             </h4>
             <div className="flex flex-col space-y-2 text-xs">
               {profileData.cvDownloads.map((cv) => (
@@ -98,7 +98,7 @@ export default function Footer() {
                   className="flex items-center justify-between p-2.5 rounded-lg bg-[#222222] hover:bg-[#2A2A2A] border border-[#333333] hover:border-[#FF8500] text-[#DDDDDD] transition-all group"
                 >
                   <span className="font-semibold group-hover:text-[#FF8500]">
-                    {cv.title}
+                    Download CV
                   </span>
                   <Download className="w-3.5 h-3.5 text-[#777777] group-hover:text-[#FF8500]" />
                 </a>

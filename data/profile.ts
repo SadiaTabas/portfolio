@@ -9,7 +9,7 @@ export const cvDiscrepancies: CVDiscrepancyFlag[] = [
   {
     field: "CGPA",
     options: [
-      { label: "CGPA 3.97 / 4.00", value: "3.97", source: "Official Academic Record" }
+      { label: "CGPA 3.97 / 4.00", value: "3.97", source: "Official Academic Record (AIUB)" }
     ],
     currentSelected: "3.97",
     note: "Official Academic Standing: CGPA 3.97 / 4.00 at AIUB."
@@ -17,19 +17,17 @@ export const cvDiscrepancies: CVDiscrepancyFlag[] = [
   {
     field: "Internship Title",
     options: [
-      { label: "Web Development Intern", value: "Web Development Intern", source: "Web Developer CV & Backend CV" },
-      { label: "Software Development & Quality Assurance Intern", value: "Software Development & Quality Assurance Intern", source: "SQT CV" }
+      { label: "Web Development Intern", value: "Web Development Intern", source: "Official Experience Record" }
     ],
     currentSelected: "Web Development Intern",
-    note: "Source documents reflect dual competencies in full-stack engineering and software quality assurance."
+    note: "Industry experience in full-stack web engineering and software quality assurance."
   },
   {
-    field: "Internship Date Range",
+    field: "Internship Tenure",
     options: [
-      { label: "September 2026 – November 2026", value: "Sep 2026 – Nov 2026", source: "Web Developer CV" },
-      { label: "September 2026 – December 2026", value: "Sep 2026 – Dec 2026", source: "Backend CV" }
+      { label: "September 2026 – Present", value: "Sep 2026 – Present", source: "Current Production Status" }
     ],
-    currentSelected: "September 2026 – December 2026",
+    currentSelected: "September 2026 – Present",
     note: "Engaged in production client engineering at Dcastalia Limited."
   }
 ];
@@ -45,13 +43,13 @@ export const profileData = {
   ],
   heroTagline: "FULL-STACK WEB DEVELOPER | BANGLADESH",
   heroHeading: {
-    line1: "BUILDING DIGITAL",
-    line2: "EXPERIENCES",
-    line3: "THAT WORK.",
-    highlightWord: "THAT"
+    line1: "TURNING IDEAS",
+    line2: "INTO POWERFUL",
+    line3: "WEB EXPERIENCES.",
+    highlightWord: "POWERFUL"
   },
   heroIntro:
-    "I'm a Computer Science and Engineering professional with hands-on experience in full-stack web development, backend engineering, API development, and software quality assurance. I enjoy building reliable applications, solving technical challenges, and delivering better digital experiences.",
+    "I'm a Computer Science and Engineering graduate with hands-on experience in full-stack web development, backend engineering, API development, and technical SEO. I enjoy transforming ideas into functional applications, solving real-world challenges, and building reliable digital solutions that create meaningful user experiences.",
   heroSupportingDescription:
     "I build responsive web applications, reliable backend services, and thoughtful digital experiences through clean code, scalable architecture, and user-focused development.",
   aboutIntro:
@@ -99,12 +97,12 @@ export const profileData = {
   },
   cvDownloads: [
     {
-      title: "Backend Development CV",
-      description: "API architecture, NestJS, ASP.NET Core, database design, and authentication workflows.",
-      path: "/cv/Tabassum_Aktar_Sadia_Backend_CV.pdf",
-      fileName: "Tabassum_Aktar_Sadia_Backend_CV.pdf",
+      title: "Download CV",
+      description: "Full-Stack Web Development, API Architecture & Software Quality Assurance.",
+      path: "/cv/Tabassum_Aktar_Sadia_CV.pdf",
+      fileName: "Tabassum_Aktar_Sadia_CV.pdf",
       isPrimary: true,
-      tag: "Official Resume"
+      tag: "Get My CV"
     }
   ]
 };

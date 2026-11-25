@@ -30,15 +30,11 @@ The website consolidates information from all three specialized CVs:
 As requested, differing details across the three CVs have not been combined silently; they are managed in [`data/profile.ts`](file:///f:/Portfolio/data/profile.ts) and surfaced via the interactive transparency panel on the website:
 
 - **CGPA**: **3.97 / 4.00** at AIUB (Dean's Honorable Mention for Academic Excellence)
-- **Primary Live Project**: **Dhaka Metro Rail Ticketing System** deployed at [https://metro-rail-dhaka.vercel.app](https://metro-rail-dhaka.vercel.app)
-- **Official Resume**: [`/cv/Tabassum_Aktar_Sadia_Backend_CV.pdf`](file:///f:/Portfolio/public/cv/Tabassum_Aktar_Sadia_Backend_CV.pdf)
-2. **Internship Position Title**:
-   - `Web Developer CV-v3` & `Backend CV`: **Web Development Intern**
-   - `SQT CV-v3`: **Software Development & Quality Assurance Intern**
-   - *Displayed with dual competencies across full-stack engineering and SQA.*
-3. **Internship Date Range**:
-   - `Web Developer CV-v3` & `SQT CV-v3`: **September 2026 – November 2026 (Completed 3-Month Internship)** *(Currently active on site)*
-   - `Backend CV`: **September 2026 – December 2026 (On-going)**
+- **Primary Live Projects**:
+  - **Dhaka Metro Rail Ticketing System**: [https://metro-rail-dhaka.vercel.app](https://metro-rail-dhaka.vercel.app)
+  - **SD Inventory Management System**: [https://sd-inventory.vercel.app/](https://sd-inventory.vercel.app/)
+- **Official Resume PDF**: [`/cv/Tabassum_Aktar_Sadia_CV.pdf`](file:///f:/Portfolio/public/cv/Tabassum_Aktar_Sadia_CV.pdf)
+- **Current Industry Role**: **Web Development Intern** at Dcastalia Limited (September 2026 – Present)
 
 ---
 
@@ -56,10 +52,7 @@ As requested, differing details across the three CVs have not been combined sile
 
 ## 📥 Resume Download System
 
-All three official PDF resumes are stored in [`public/cv/`](file:///f:/Portfolio/public/cv/):
-1. **Web Development CV**: [`/cv/Tabassum_Aktar_Sadia_Web_Developer_CV.pdf`](file:///f:/Portfolio/public/cv/Tabassum_Aktar_Sadia_Web_Developer_CV.pdf) *(Primary Navbar action)*
-2. **Backend Development CV**: [`/cv/Tabassum_Aktar_Sadia_Backend_CV.pdf`](file:///f:/Portfolio/public/cv/Tabassum_Aktar_Sadia_Backend_CV.pdf)
-3. **Software Quality Assurance CV**: [`/cv/Tabassum_Aktar_Sadia_SQT_CV.pdf`](file:///f:/Portfolio/public/cv/Tabassum_Aktar_Sadia_SQT_CV.pdf)
+The official PDF resume is stored in [`public/cv/Tabassum_Aktar_Sadia_CV.pdf`](file:///f:/Portfolio/public/cv/Tabassum_Aktar_Sadia_CV.pdf) and is linked across the site using contextual calls-to-action ("Download CV" / "Get My CV").
 
 ---
 

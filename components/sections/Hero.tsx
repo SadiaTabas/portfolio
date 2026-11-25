@@ -65,11 +65,11 @@ export default function Hero() {
               <a
                 href={profileData.cvDownloads[0].path}
                 download={profileData.cvDownloads[0].fileName}
-                className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full bg-[#E8E2DC] text-[#171717] font-bold text-xs sm:text-sm uppercase tracking-wider hover:bg-[#DDD5CC] transition-all duration-200"
-                title="Download Web Developer CV (PDF)"
+                className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full bg-[#E8E2DC] text-[#171717] font-bold text-xs sm:text-sm uppercase tracking-wider hover:bg-[#DDD5CC] transition-all duration-200 shadow-xs"
+                title="Get My CV (PDF)"
               >
                 <Download className="w-4 h-4 text-[#FF8500]" />
-                <span>Download CV</span>
+                <span>Get My CV</span>
               </a>
             </div>
 

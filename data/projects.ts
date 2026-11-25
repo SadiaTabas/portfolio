@@ -34,7 +34,7 @@ export const projectsData: Project[] = [
     subtitle: "Role-Based Web Ticketing, Distance Pricing & Automated SQA Testing",
     category: "Web Applications",
     allCategories: ["Web Applications", "Backend Development", "Software Testing", "Full-Stack Development"],
-    primarySource: "Backend CV, Web Developer CV & SQT CV",
+    primarySource: "Full-Stack Web & SQA Testing",
     technologies: ["PHP", "JavaScript", "MySQL", "HTML5", "CSS3", "Selenium IDE", "Vercel"],
     description: "A web-based metro rail ticketing application implementing MVC architecture, route distance-based fare calculation, ticket reservation, and automated testing.",
     longDescription:
@@ -65,7 +65,7 @@ export const projectsData: Project[] = [
     subtitle: "Enterprise Inventory, Order Processing & Delivery Logistics Platform",
     category: "Full-Stack Development",
     allCategories: ["Full-Stack Development", "Backend Development", "Web Applications"],
-    primarySource: "Backend CV",
+    primarySource: "Full-Stack Enterprise Logistics",
     technologies: ["Laravel", "PHP", "MySQL", "JavaScript", "HTML5", "CSS3", "Excel Integration", "Vercel"],
     description: "A comprehensive web-based inventory management application designed to manage products, categories, stock levels, customer orders, and administrative logistics.",
     longDescription:
@@ -97,7 +97,7 @@ export const projectsData: Project[] = [
     subtitle: "Doctor Administration, Secure RBAC Authentication & Appointment Scheduler",
     category: "Backend Development",
     allCategories: ["Backend Development", "Full-Stack Development", "Software Testing"],
-    primarySource: "Backend CV, Web Developer CV & SQT CV",
+    primarySource: "Modular API & Healthcare Engineering",
     technologies: ["NestJS", "Node.js", "TypeScript", "PostgreSQL", "Next.js", "React.js", "Tailwind CSS", "Axios", "Postman"],
     description: "A healthcare module focused on doctor registration, token authentication, professional profile administration, and doctor-patient appointment scheduling.",
     longDescription:
@@ -128,7 +128,7 @@ export const projectsData: Project[] = [
     subtitle: "Enterprise Full-Stack Restaurant Ordering, Table Reservation & Billing",
     category: "Full-Stack Development",
     allCategories: ["Full-Stack Development", "Backend Development", "Web Applications", "Software Testing"],
-    primarySource: "Backend CV, Web Developer CV & SQT CV",
+    primarySource: "Full-Stack Enterprise Architecture",
     technologies: ["ASP.NET Core MVC", "ASP.NET Core Web API", "C#", "SQL Server", "Swagger", "Bootstrap 5", "Razor Pages"],
     description: "A full-stack enterprise restaurant management application with customer ordering, table reservations, staff workflows, and administrative operations.",
     longDescription:
@@ -159,7 +159,7 @@ export const projectsData: Project[] = [
     subtitle: "Non-Profit Donor Tracking, Campaign Allocation & Audit Verification",
     category: "Software Testing",
     allCategories: ["Software Testing", "Backend Development"],
-    primarySource: "SQT CV",
+    primarySource: "SQA Verification & Database Engineering",
     technologies: ["C#", "Microsoft SQL Server", "Manual Testing", "Test Case Design", "Boundary-Value Testing"],
     description: "A donation management and charity platform supporting donors, volunteers, administrators, and campaign financial tracking.",
     longDescription:
@@ -190,7 +190,7 @@ export const projectsData: Project[] = [
     subtitle: "Emergency Response, Agile Scrum Workflow & SQA Test Suite",
     category: "Software Testing",
     allCategories: ["Software Testing", "Web Applications"],
-    primarySource: "Projects Portfolio & SQA CV",
+    primarySource: "Agile Scrum & Safety UX",
     technologies: ["Figma", "Trello", "Scrum", "Requirements", "Testing"],
     description: "A women's safety mobile application designed to support emergency response, SOS alerts, incident reporting, and real-time safety assistance.",
     longDescription:
@@ -221,7 +221,7 @@ export const projectsData: Project[] = [
     subtitle: "Desktop Travel Planning, Multi-Modal Transport & Booking Engine",
     category: "Web Applications",
     allCategories: ["Web Applications", "Backend Development"],
-    primarySource: "Academic & Software Projects",
+    primarySource: "Desktop Software Engineering",
     technologies: ["Java", "GUI", "Apache (XAMPP)"],
     description: "A GUI-based travel management system developed using Java to simplify trip planning with transport selection and hotel reservations.",
     longDescription:
@@ -251,7 +251,7 @@ export const projectsData: Project[] = [
     subtitle: "Corporate Real Estate Platform with Dynamic SEO & Offline Map Support",
     category: "Full-Stack Development",
     allCategories: ["Full-Stack Development", "Web Applications", "Software Testing"],
-    primarySource: "Web Developer CV",
+    primarySource: "Client Platform at Dcastalia",
     technologies: ["Next.js", "React.js", "Laravel CMS", "Lighthouse", "Screaming Frog", "Schema Validator"],
     description: "A premier corporate real estate platform featuring interactive property discovery, technical SEO features, and accessibility compliance.",
     longDescription:
@@ -282,7 +282,7 @@ export const projectsData: Project[] = [
     subtitle: "Corporate Portal & Commercial E-Commerce Platform",
     category: "Full-Stack Development",
     allCategories: ["Full-Stack Development", "Backend Development", "Web Applications"],
-    primarySource: "Web Developer CV",
+    primarySource: "Client Platform at Dcastalia",
     technologies: ["Next.js", "React.js", "Laravel", "PHP", "MySQL", "REST APIs", "GitLab CI/CD", "OWASP ZAP"],
     description: "A high-traffic corporate portal and e-commerce platform for industrial and commercial energy products with automated order pipelines.",
     longDescription:
@@ -313,7 +313,7 @@ export const projectsData: Project[] = [
     subtitle: "Enterprise Concrete Solutions Website, REST Integrations & Telemetry",
     category: "Web Applications",
     allCategories: ["Web Applications", "Full-Stack Development"],
-    primarySource: "Web Developer CV",
+    primarySource: "Client Platform at Dcastalia",
     technologies: ["Next.js", "React.js", "REST APIs", "JSON-LD Schema", "GA4", "Google Search Console"],
     description: "Corporate website for a premier industrial concrete manufacturer featuring API-driven specifications and search analytics integration.",
     longDescription:
@@ -343,7 +343,7 @@ export const projectsData: Project[] = [
     subtitle: "Corporate Regulatory Portal & Business Compliance Interface",
     category: "Web Applications",
     allCategories: ["Web Applications", "Software Testing"],
-    primarySource: "Web Developer CV",
+    primarySource: "Client Platform at Dcastalia",
     technologies: ["Next.js", "React.js", "JavaScript", "Responsive UI", "Cross-Browser Testing"],
     description: "A corporate and regulatory advisory portal providing legal updates, tax compliance bulletins, and advisory services.",
     longDescription:
@@ -371,7 +371,7 @@ export const projectsData: Project[] = [
     subtitle: "Client Platform Production Testing & Quality Assurance Verification",
     category: "Software Testing",
     allCategories: ["Software Testing"],
-    primarySource: "SQT CV",
+    primarySource: "QA Audit Platform at Dcastalia",
     technologies: ["Postman", "Lighthouse", "OWASP ZAP", "Cross-Browser Testing", "Microsoft Clarity"],
     description: "Client platform production testing, SQA validation, accessibility remediation, and user experience telemetry.",
     longDescription:
