@@ -1925,6 +1925,11 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:border-\[\#A259FF\]:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(162 89 255 / var(--tw-border-opacity, 1));
+}
+
 .hover\:border-\[\#D0C7BE\]:hover {
   --tw-border-opacity: 1;
   border-color: rgb(208 199 190 / var(--tw-border-opacity, 1));
@@ -1948,6 +1953,11 @@ video {
 .hover\:bg-\[\#333333\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(51 51 51 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-\[\#A259FF\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(162 89 255 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-\[\#DDD5CC\]:hover {

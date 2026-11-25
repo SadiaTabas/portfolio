@@ -18,7 +18,7 @@ export default function DiscrepancyNotice() {
             Source Documentation Notice:
           </span>
           <span className="text-[#666666]">
-            Three specialized CVs consolidated (Web Dev, Backend, SQA).
+            One CV consolidated.
           </span>
         </div>
 

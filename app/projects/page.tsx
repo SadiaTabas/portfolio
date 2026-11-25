@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Projects & Engineering Work | Tabassum Aktar Sadia",
   description:
-    "Explore 10 software engineering projects developed by Tabassum Aktar Sadia across full-stack applications, NestJS APIs, ASP.NET Core systems, Laravel platforms, and SQA automation suites.",
+    "Explore 12 software engineering projects developed by Tabassum Aktar Sadia across full-stack applications, NestJS APIs, ASP.NET Core systems, Laravel platforms, and SQA automation suites.",
 };
 
 export default function ProjectsPage() {
@@ -23,7 +23,7 @@ export default function ProjectsPage() {
             <span className="text-[#FF8500]">WORK & PROJECTS.</span>
           </h1>
           <p className="text-sm text-[#666666] max-w-2xl leading-relaxed">
-            A comprehensive collection of 10 applications, production client implementations, and software engineering systems synthesized from my Web Developer, Backend, and SQA portfolios.
+            A comprehensive collection of 12 applications, production client implementations, and software engineering systems synthesized from my Web Developer, Backend, and SQA portfolios.
           </p>
         </div>
 

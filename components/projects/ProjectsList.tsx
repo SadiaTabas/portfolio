@@ -13,8 +13,21 @@ import {
   Shield,
   ArrowRight,
   Sparkles,
-  Info
+  Info,
+  Globe
 } from "lucide-react";
+
+function FigmaIcon({ className = "w-3.5 h-3.5" }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19 28.5C19 23.2533 23.2533 19 28.5 19C33.7467 19 38 23.2533 38 28.5C38 33.7467 33.7467 38 28.5 38C23.2533 38 19 33.7467 19 28.5Z" fill="#1ABCFE"/>
+      <path d="M0 47.5C0 42.2533 4.25329 38 9.5 38H19V47.5C19 52.7467 14.7467 57 9.5 57C4.25329 57 0 52.7467 0 47.5Z" fill="#0ACF83"/>
+      <path d="M19 0V19H28.5C33.7467 19 38 14.7467 38 9.5C38 4.25329 33.7467 0 28.5 0H19Z" fill="#FF7262"/>
+      <path d="M0 9.5C0 14.7467 4.25329 19 9.5 19H19V0H9.5C4.25329 0 0 4.25329 0 9.5Z" fill="#F24E1E"/>
+      <path d="M0 28.5C0 33.7467 4.25329 38 9.5 38H19V19H9.5C4.25329 19 0 23.2533 0 28.5Z" fill="#A259FF"/>
+    </svg>
+  );
+}
 
 export default function ProjectsList() {
   const [selectedCategory, setSelectedCategory] = useState<string>("All Projects");
@@ -152,7 +165,7 @@ export default function ProjectsList() {
                       {project.liveUrl && (
                         <span className="text-[10px] font-extrabold uppercase tracking-wider bg-green-500 text-white px-2 py-0.5 rounded-full flex items-center gap-1 shadow-xs">
                           <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
-                          Live
+                          LIVE
                         </span>
                       )}
                     </div>
@@ -167,9 +180,18 @@ export default function ProjectsList() {
 
                 {/* Body Details */}
                 <div className="p-6">
-                  <p className="text-xs font-bold text-[#FF8500] uppercase tracking-wider mb-2">
-                    {project.subtitle}
-                  </p>
+                  <div className="flex items-center justify-between gap-2 mb-2">
+                    <p className="text-xs font-bold text-[#FF8500] uppercase tracking-wider line-clamp-1">
+                      {project.subtitle}
+                    </p>
+                    {project.liveUrl && (
+                      <span className="shrink-0 text-[10px] font-extrabold uppercase tracking-wider bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full flex items-center gap-1">
+                        <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
+                        LIVE
+                      </span>
+                    )}
+                  </div>
+
                   <p className="text-xs text-[#555555] leading-relaxed mb-6 line-clamp-3">
                     {project.description}
                   </p>
@@ -199,7 +221,7 @@ export default function ProjectsList() {
                   onClick={() => setActiveModalProject(project)}
                   className="inline-flex items-center gap-1.5 text-xs font-extrabold text-[#171717] group-hover:text-[#FF8500] transition-colors"
                 >
-                  <span>View Details</span>
+                  <span>Project Details</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </button>
 
@@ -211,19 +233,36 @@ export default function ProjectsList() {
                       rel="noopener noreferrer"
                       className="p-2 rounded-full bg-[#F3EEEA] text-[#171717] hover:bg-[#171717] hover:text-white transition-colors"
                       title="GitHub Repository"
+                      aria-label="GitHub Repository"
                     >
                       <Github className="w-3.5 h-3.5" />
                     </a>
                   )}
+
+                  {project.figmaUrl && (
+                    <a
+                      href={project.figmaUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 rounded-full bg-[#F3EEEA] text-[#171717] hover:bg-[#A259FF] hover:text-white transition-colors"
+                      title="Figma Prototype / Design"
+                      aria-label="Figma Prototype"
+                    >
+                      <FigmaIcon className="w-3.5 h-3.5" />
+                    </a>
+                  )}
+
                   {project.liveUrl && (
                     <a
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 rounded-full bg-[#F3EEEA] text-[#171717] hover:bg-[#FF8500] hover:text-white transition-colors"
+                      className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-[#FF8500] text-white hover:bg-[#E67700] transition-colors text-[11px] font-bold shadow-xs"
                       title="Live Demo Platform"
                     >
-                      <ExternalLink className="w-3.5 h-3.5" />
+                      <Globe className="w-3 h-3" />
+                      <span>Live Site</span>
+                      <ExternalLink className="w-3 h-3" />
                     </a>
                   )}
                 </div>
@@ -256,6 +295,12 @@ export default function ProjectsList() {
                   {activeModalProject.isClientProject && (
                     <span className="text-[10px] font-bold uppercase tracking-wider bg-[#FF8500] text-white px-2 py-0.5 rounded">
                       Client Platform
+                    </span>
+                  )}
+                  {activeModalProject.liveUrl && (
+                    <span className="text-[10px] font-bold uppercase tracking-wider bg-green-500 text-white px-2 py-0.5 rounded flex items-center gap-1">
+                      <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+                      LIVE
                     </span>
                   )}
                 </div>
@@ -350,7 +395,20 @@ export default function ProjectsList() {
 
               {/* Links & External Actions */}
               <div className="pt-6 border-t border-[#F0EBE5] flex flex-wrap items-center justify-between gap-4">
-                <div className="flex items-center gap-3">
+                <div className="flex flex-wrap items-center gap-3">
+                  {activeModalProject.liveUrl && (
+                    <a
+                      href={activeModalProject.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#FF8500] text-white text-xs font-bold uppercase tracking-wider hover:bg-[#E67700] transition-colors shadow-sm"
+                    >
+                      <Globe className="w-4 h-4" />
+                      <span>Live Site ({activeModalProject.liveUrl.replace('https://', '').replace(/\/$/, '')})</span>
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  )}
+
                   {activeModalProject.githubUrl && (
                     <a
                       href={activeModalProject.githubUrl}
@@ -362,15 +420,17 @@ export default function ProjectsList() {
                       <span>View GitHub Repository</span>
                     </a>
                   )}
-                  {activeModalProject.liveUrl && (
+
+                  {activeModalProject.figmaUrl && (
                     <a
-                      href={activeModalProject.liveUrl}
+                      href={activeModalProject.figmaUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#FF8500] text-white text-xs font-bold uppercase tracking-wider hover:bg-[#E67700] transition-colors shadow-sm"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#242424] text-white border border-[#3A3A3A] text-xs font-bold uppercase tracking-wider hover:bg-[#A259FF] hover:border-[#A259FF] transition-colors"
                     >
-                      <ExternalLink className="w-4 h-4" />
-                      <span>Live Demo ({activeModalProject.liveUrl.replace('https://', '')})</span>
+                      <FigmaIcon className="w-4 h-4" />
+                      <span>Open Figma Design</span>
+                      <ExternalLink className="w-3.5 h-3.5" />
                     </a>
                   )}
                 </div>

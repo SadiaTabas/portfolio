@@ -13,6 +13,7 @@ export interface Project {
   architectureHighlights: string[];
   githubUrl?: string;
   liveUrl?: string;
+  figmaUrl?: string;
   isClientProject: boolean;
   imagePlaceholderText: string;
 }
@@ -30,29 +31,27 @@ export const projectsData: Project[] = [
     id: "dhaka-metro-rail",
     number: "01",
     title: "Dhaka Metro Rail Ticketing System",
-    subtitle: "Automated Transit Ticketing, Route Optimization & Automated SQA Testing",
+    subtitle: "Role-Based Web Ticketing, Distance Pricing & Automated SQA Testing",
     category: "Web Applications",
     allCategories: ["Web Applications", "Backend Development", "Software Testing", "Full-Stack Development"],
     primarySource: "Backend CV, Web Developer CV & SQT CV",
-    technologies: ["PHP", "MySQL", "JavaScript", "HTML5", "CSS3", "Selenium IDE", "Apache (XAMPP)", "Vercel"],
-    description: "A web-based metro rail ticketing application implementing MVC architecture, route distance-based fare calculation, ticket reservation, and automated testing.",
+    technologies: ["PHP", "JavaScript", "MySQL", "HTML5", "CSS3", "Selenium IDE", "Vercel"],
+    description: "A web-based metro rail ticketing application implementing MVC architecture, route distance-based fare calculation, and comprehensive manual and automated SQA testing.",
     longDescription:
-      "Modeled after the mass transit system in Dhaka, this application automates passenger ticket booking, station route lookups, and transaction tracking. Implemented MVC architecture in PHP with MySQL database transactions. Includes passenger, employee, and administrator roles, with automated test scripts developed in Selenium IDE to verify user flows. Deployed live on Vercel with responsive cross-device access.",
+      "Developed a role-based web-based ticket management system using PHP and MySQL with Passenger, Staff, and Admin workflows. Performed manual functional testing and UI automation testing using Selenium IDE to validate authentication, profile management, ticket booking, payment, admin, and staff workflows. Designed and executed functional test cases and verified application behavior through expected and actual results, including database verification using phpMyAdmin. Documented the testing activities in a formal Software Test Plan, covering test cases, testing approach, pass/fail criteria, test deliverables, testing schedule, and risk management.",
     features: [
-      "Role-based authentication with secure login, registration, and session control",
-      "Passenger booking module with origin/destination station selection and fare calculation",
-      "Route and fare management with dynamic distance pricing rules",
-      "Transactional ticket issuance with unique booking IDs and journey histories",
-      "Admin console for line management, station schedules, and revenue reports",
-      "Employee ticket verification, passenger check-in, and cancellation handling",
-      "Automated UI test suites built with Selenium IDE for functional regression testing",
-      "Live deployment on Vercel with cross-browser and mobile responsive optimization"
+      "Developed a role-based web-based ticket management system using PHP and MySQL with Passenger, Staff, and Admin workflows",
+      "Performed manual functional testing and UI automation testing using Selenium IDE to validate authentication, profile management, ticket booking, payment, admin, and staff workflows",
+      "Designed and executed functional test cases and verified application behavior through expected and actual results, including database verification using phpMyAdmin",
+      "Documented testing activities in a formal Software Test Plan covering test cases, testing approach, pass/fail criteria, deliverables, and risk management",
+      "Route and fare management with dynamic distance-based pricing rules and transactional ticket issuance",
+      "Live deployment on Vercel with responsive cross-browser optimization"
     ],
     architectureHighlights: [
-      "Custom PHP MVC Pattern separating Controllers, Models, and Views",
-      "Relational MySQL Schema for Transactions, Stations, and Travel Logs",
-      "Selenium IDE Test Suites for Regression & Cross-Browser Verification",
-      "Live Vercel Deployment with Optimized Asset Delivery and Fast Booking Flows"
+      "Role-Based Access Control (RBAC) across Passengers, Staff, and Administrators",
+      "Comprehensive SQA Test Plan & Automated Selenium IDE Regression Suite",
+      "Relational MySQL Schema with Transactional Integrity verified via phpMyAdmin",
+      "Live Vercel Deployment with Fast Booking Flows (https://metro-rail-dhaka.vercel.app)"
     ],
     githubUrl: "https://github.com/SadiaTabas",
     liveUrl: "https://metro-rail-dhaka.vercel.app",
@@ -60,8 +59,40 @@ export const projectsData: Project[] = [
     imagePlaceholderText: "Dhaka Metro Rail Ticketing UI"
   },
   {
-    id: "medicore-hospital",
+    id: "sd-inventory-system",
     number: "02",
+    title: "SD Inventory Management System",
+    subtitle: "Enterprise Inventory, Order Processing & Delivery Logistics Platform",
+    category: "Full-Stack Development",
+    allCategories: ["Full-Stack Development", "Backend Development", "Web Applications"],
+    primarySource: "Backend CV",
+    technologies: ["Laravel", "PHP", "MySQL", "JavaScript", "HTML5", "CSS3", "Excel Integration", "Vercel"],
+    description: "A comprehensive web-based inventory management application designed to manage products, categories, stock levels, customer orders, and administrative logistics.",
+    longDescription:
+      "Engineered with Laravel and a normalized MySQL database, this system automates end-to-end retail warehouse management. It features product catalog categorization, dynamic stock replenishment counters, bulk product spreadsheet importing via Excel, an automated order delivery dispatcher for couriers/riders, and an analytical dashboard for management. Deployed live with real-time operations.",
+    features: [
+      "Product & Category CRUD with dynamic image uploads and SKU tracking",
+      "Real-time inventory tracking with low-stock threshold alerts",
+      "Excel spreadsheet bulk product import for automated stock population",
+      "Order management with customer profile lookup and status pipelines",
+      "Financial ledger with payment recording and outstanding balance tracking",
+      "Rider dispatch and delivery status tracking (Dispatched, Delivered, Returned)",
+      "Administrative executive dashboard displaying key business performance metrics"
+    ],
+    architectureHighlights: [
+      "MVC Architecture with Laravel Service & Repository Patterns",
+      "Relational MySQL Schema with Foreign Key Constraints & Cascading",
+      "Asynchronous Data Ingestion via Maatwebsite Excel Parser",
+      "Live Deployment on Vercel: https://sd-inventory.vercel.app/"
+    ],
+    githubUrl: "https://github.com/SadiaTabas",
+    liveUrl: "https://sd-inventory.vercel.app/",
+    isClientProject: false,
+    imagePlaceholderText: "SD Inventory System Dashboard"
+  },
+  {
+    id: "medicore-hospital",
+    number: "03",
     title: "MediCore Hospital Management: Doctor Module",
     subtitle: "Doctor Administration, Secure RBAC Authentication & Appointment Scheduler",
     category: "Backend Development",
@@ -89,37 +120,6 @@ export const projectsData: Project[] = [
     githubUrl: "https://github.com/SadiaTabas",
     isClientProject: false,
     imagePlaceholderText: "MediCore Doctor Module Portal"
-  },
-  {
-    id: "sd-inventory-system",
-    number: "03",
-    title: "SD Inventory Management System",
-    subtitle: "Enterprise Inventory, Order Processing & Delivery Logistics Platform",
-    category: "Full-Stack Development",
-    allCategories: ["Full-Stack Development", "Backend Development", "Web Applications"],
-    primarySource: "Backend CV",
-    technologies: ["Laravel", "PHP", "MySQL", "JavaScript", "HTML5", "CSS3", "Excel Integration"],
-    description: "A comprehensive web-based inventory management application designed to manage products, categories, stock levels, customer orders, and administrative logistics.",
-    longDescription:
-      "Engineered with Laravel and a normalized MySQL database, this system automates end-to-end retail warehouse management. It features product catalog categorization, dynamic stock replenishment counters, bulk product spreadsheet importing via Excel, an automated order delivery dispatcher for couriers/riders, and an analytical dashboard for management.",
-    features: [
-      "Product & Category CRUD with dynamic image uploads and SKU tracking",
-      "Real-time inventory tracking with low-stock threshold alerts",
-      "Excel spreadsheet bulk product import for automated stock population",
-      "Order management with customer profile lookup and status pipelines",
-      "Financial ledger with payment recording and outstanding balance tracking",
-      "Rider dispatch and delivery status tracking (Dispatched, Delivered, Returned)",
-      "Administrative executive dashboard displaying key performance metrics"
-    ],
-    architectureHighlights: [
-      "MVC Architecture with Laravel Service & Repository Patterns",
-      "Relational MySQL Schema with Foreign Key Constraints & Cascading",
-      "Asynchronous Data Ingestion via Maatwebsite Excel Parser",
-      "Secure Session-Based Administrative Role Authorization"
-    ],
-    githubUrl: "https://github.com/SadiaTabas",
-    isClientProject: false,
-    imagePlaceholderText: "SD Inventory System Dashboard"
   },
   {
     id: "restaurant-management",
@@ -184,8 +184,69 @@ export const projectsData: Project[] = [
     imagePlaceholderText: "Donation System Architecture & QA"
   },
   {
-    id: "akhter-properties",
+    id: "safeher-safety-app",
     number: "06",
+    title: "SafeHer – Women’s Safety Mobile Application",
+    subtitle: "Emergency Response, Agile Scrum Workflow & SQA Test Suite",
+    category: "Software Testing",
+    allCategories: ["Software Testing", "Web Applications"],
+    primarySource: "Projects Portfolio & SQA CV",
+    technologies: ["Figma", "Trello", "Scrum", "Requirements", "Testing"],
+    description: "A women's safety mobile application designed to support emergency response, SOS alerts, incident reporting, and real-time safety assistance.",
+    longDescription:
+      "Designed a mobile application UI in Figma for emergency safety and incident reporting. Applied Scrum methodology using Trello for backlog management and sprint planning, and designed interactive prototypes in Figma. Prepared test scenarios and test cases, performed functional testing, documented defects, and validated core features for usability and reliability. Documented functional and non-functional requirements to ensure clear system specifications.",
+    features: [
+      "Designed mobile application UI in Figma for emergency safety, SOS alert activation, and incident reporting",
+      "Applied Scrum methodology using Trello for backlog management, user stories, and sprint planning",
+      "Interactive prototypes crafted in Figma with intuitive emergency workflows and safe-zone mapping",
+      "Prepared comprehensive test scenarios and test cases, performing functional and usability testing",
+      "Documented and tracked defects to validate core safety features under critical simulated conditions",
+      "Authored functional and non-functional requirements specifications ensuring structured system design"
+    ],
+    architectureHighlights: [
+      "Interactive High-Fidelity Figma Prototype & Component Design System",
+      "Agile Scrum Framework with Trello Sprint Backlog Organization",
+      "Formal Requirement Specification (SRS) & SQA Test Case Documentation",
+      "Emergency Flow Optimization for High-Stress User Interactions"
+    ],
+    githubUrl: "https://github.com/SadiaTabas/SafeHer-A-Women-s-Safety-Application",
+    figmaUrl: "https://www.figma.com/design/7qQVsxRFS8MJngpcYm92G0/SafeHer--Community-?node-id=0-1&t=izOISIKPUTujEJ2x-0",
+    isClientProject: false,
+    imagePlaceholderText: "SafeHer Women Safety UI & Figma"
+  },
+  {
+    id: "travelgo-travel-system",
+    number: "07",
+    title: "TravelGo – Travel Management System",
+    subtitle: "Desktop Travel Planning, Multi-Modal Transport & Booking Engine",
+    category: "Web Applications",
+    allCategories: ["Web Applications", "Backend Development"],
+    primarySource: "Academic & Software Projects",
+    technologies: ["Java", "GUI", "Apache (XAMPP)"],
+    description: "A GUI-based travel management system developed using Java to simplify trip planning with transport selection and hotel reservations.",
+    longDescription:
+      "Developed a GUI-based travel management system using Java to simplify trip planning with destination selection. Implemented transport options (bus, train, flight), hotel booking functionality with integrated payment calculation, and travel report generation. Designed an interactive desktop interface ensuring smooth navigation, structured booking data management, and user-friendly experience.",
+    features: [
+      "Developed a GUI-based travel management application using Java with custom desktop components",
+      "Comprehensive trip planning module featuring dynamic destination and route selection",
+      "Multi-modal transport booking workflows supporting bus, train, and flight options",
+      "Hotel booking functionality with automated cost calculation and receipt generation",
+      "Data persistence and transaction management supported via Apache (XAMPP) / database integration",
+      "Streamlined desktop user experience with responsive navigation and booking validation"
+    ],
+    architectureHighlights: [
+      "Modular Java GUI Architecture with Event-Driven Programming",
+      "Relational Data Persistence via Apache / MySQL Database Connection",
+      "Automated Itinerary and Booking Calculation Logic",
+      "Clear Separation of Presentation Interface and Business Logic"
+    ],
+    githubUrl: "https://github.com/SadiaTabas/TravelGo",
+    isClientProject: false,
+    imagePlaceholderText: "TravelGo Travel Management UI"
+  },
+  {
+    id: "akhter-properties",
+    number: "08",
     title: "Akhter Properties Ltd.",
     subtitle: "Corporate Real Estate Platform with Dynamic SEO & Offline Map Support",
     category: "Full-Stack Development",
@@ -216,7 +277,7 @@ export const projectsData: Project[] = [
   },
   {
     id: "rock-energy",
-    number: "07",
+    number: "09",
     title: "Rock Energy Ltd.",
     subtitle: "Corporate Portal & Commercial E-Commerce Platform",
     category: "Full-Stack Development",
@@ -247,7 +308,7 @@ export const projectsData: Project[] = [
   },
   {
     id: "concord-ready-mix",
-    number: "08",
+    number: "10",
     title: "Concord Ready Mix & Concrete Products",
     subtitle: "Enterprise Concrete Solutions Website, REST Integrations & Telemetry",
     category: "Web Applications",
@@ -277,7 +338,7 @@ export const projectsData: Project[] = [
   },
   {
     id: "ace-advisory",
-    number: "09",
+    number: "11",
     title: "ACE Advisory",
     subtitle: "Corporate Regulatory Portal & Business Compliance Interface",
     category: "Web Applications",
@@ -305,7 +366,7 @@ export const projectsData: Project[] = [
   },
   {
     id: "solution-360",
-    number: "10",
+    number: "12",
     title: "Solution 360",
     subtitle: "Client Platform Production Testing & Quality Assurance Verification",
     category: "Software Testing",

@@ -6,8 +6,9 @@ import { ArrowRight, ExternalLink, Github, Code, Check, Globe } from "lucide-rea
 import { projectsData } from "@/data/projects";
 
 export default function HomeFeaturedProjects() {
-  // Top 3 featured projects (starts with Dhaka Metro Rail with its live link!)
+  // Top 3 featured projects (starts with Dhaka Metro Rail, then SD Inventory System, then MediCore Hospital!)
   const featured = projectsData.slice(0, 3);
+  const totalCount = projectsData.length;
 
   return (
     <section className="py-24 bg-[#F3EEEA] text-[#171717] relative">
@@ -32,7 +33,7 @@ export default function HomeFeaturedProjects() {
               href="/projects"
               className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#FF8500] hover:text-[#171717] transition-colors"
             >
-              <span>View All 10 Projects</span>
+              <span>VIEW ALL {totalCount} PROJECTS</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -50,14 +51,22 @@ export default function HomeFeaturedProjects() {
                 <div className="relative h-48 bg-[#171717] p-6 flex flex-col justify-between overflow-hidden">
                   <div className="absolute inset-0 pattern-grid-dark opacity-30 pointer-events-none" />
                   
-                  {/* Top Bar: Number & Category */}
+                  {/* Top Bar: Number, Category & Live Status */}
                   <div className="relative z-10 flex items-center justify-between">
                     <span className="text-xs font-mono font-bold text-[#FF8500]">
                       PROJECT {project.number}
                     </span>
-                    <span className="text-[10px] font-bold uppercase tracking-wider bg-white/10 text-white px-2 py-0.5 rounded backdrop-blur-xs">
-                      {project.category}
-                    </span>
+                    <div className="flex items-center gap-1.5">
+                      {project.liveUrl && (
+                        <span className="text-[10px] font-extrabold uppercase tracking-wider bg-green-500 text-white px-2 py-0.5 rounded-full flex items-center gap-1 shadow-xs">
+                          <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+                          LIVE
+                        </span>
+                      )}
+                      <span className="text-[10px] font-bold uppercase tracking-wider bg-white/10 text-white px-2 py-0.5 rounded backdrop-blur-xs">
+                        {project.category}
+                      </span>
+                    </div>
                   </div>
 
                   {/* Title Preview in Banner */}
@@ -83,7 +92,7 @@ export default function HomeFeaturedProjects() {
                     {project.liveUrl && (
                       <span className="shrink-0 text-[10px] font-extrabold uppercase tracking-wider bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full flex items-center gap-1">
                         <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-                        Live
+                        LIVE
                       </span>
                     )}
                   </div>
@@ -139,11 +148,11 @@ export default function HomeFeaturedProjects() {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-[#FF8500] text-white hover:bg-[#E67700] transition-colors text-[11px] font-bold shadow-xs"
+                      className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-[#FF8500] text-white hover:bg-[#E67700] transition-colors text-[11px] font-bold shadow-xs active:scale-95"
                       aria-label="Open Live Demo"
-                      title="Live Deployment on Vercel"
+                      title={`Live Site: ${project.liveUrl}`}
                     >
-                      <Globe className="w-3 h-3" />
+                      <Globe className="w-3.5 h-3.5" />
                       <span>Live Site</span>
                       <ExternalLink className="w-3 h-3" />
                     </a>
@@ -162,10 +171,10 @@ export default function HomeFeaturedProjects() {
               DISCOVER FULL ENGINEERING REPERTOIRE
             </span>
             <h3 className="editorial-heading text-2xl sm:text-3xl text-white mb-2">
-              READY TO EXPLORE ALL 10 PROJECTS & ARCHITECTURES?
+              READY TO EXPLORE ALL {totalCount} PROJECTS & ARCHITECTURES?
             </h3>
             <p className="text-xs sm:text-sm text-[#999999] max-w-xl">
-              Includes live Dhaka Metro Rail transit ticketing, full-stack inventory platforms, hospital doctor management, and corporate platforms.
+              Includes live Dhaka Metro Rail transit ticketing, live SD Inventory logistics platform, hospital doctor management, SafeHer women safety app, and corporate platforms.
             </p>
           </div>
           <Link
