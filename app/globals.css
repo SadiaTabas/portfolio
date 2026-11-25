@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-ivory: #F3EEEA;
+    --bg-charcoal: #171717;
+    --accent-orange: #FF8500;
+    --text-primary: #171717;
+    --text-muted: #777777;
+    --bg-card: #FFFFFF;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #F3EEEA;
+    color: #171717;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: #FF8500;
+    color: #FFFFFF;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F3EEEA;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #D9D2CB;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FF8500;
+  }
+}
+
+@layer utilities {
+  .editorial-heading {
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    line-height: 0.95;
+    text-transform: uppercase;
+  }
+
+  .editorial-subheading {
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.75rem;
+  }
+
+  .pattern-grid {
+    background-image: radial-gradient(rgba(23, 23, 23, 0.08) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .pattern-grid-dark {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .text-stroke-orange {
+    -webkit-text-stroke: 1px #FF8500;
+    color: transparent;
+  }
+
+  .text-stroke-charcoal {
+    -webkit-text-stroke: 1px #171717;
+    color: transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
