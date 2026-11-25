@@ -12,6 +12,7 @@ export interface Project {
   features: string[];
   architectureHighlights: string[];
   githubUrl?: string;
+  testingRepoUrl?: string;
   liveUrl?: string;
   figmaUrl?: string;
   isClientProject: boolean;
@@ -51,9 +52,11 @@ export const projectsData: Project[] = [
       "Role-Based Access Control (RBAC) across Passengers, Staff, and Administrators",
       "Comprehensive SQA Test Plan & Automated Selenium IDE Regression Suite",
       "Relational MySQL Schema with Transactional Integrity verified via phpMyAdmin",
+      "Dedicated Selenium Testing Repository: https://github.com/SadiaTabas/Dhaka-Metro-Testing",
       "Live Vercel Deployment with Fast Booking Flows (https://metro-rail-dhaka.vercel.app)"
     ],
     githubUrl: "https://github.com/SadiaTabas/Dhaka-Metro-Rail",
+    testingRepoUrl: "https://github.com/SadiaTabas/Dhaka-Metro-Testing",
     liveUrl: "https://metro-rail-dhaka.vercel.app",
     isClientProject: false,
     imagePlaceholderText: "Dhaka Metro Rail Ticketing UI"
@@ -215,8 +218,40 @@ export const projectsData: Project[] = [
     imagePlaceholderText: "SafeHer Women Safety UI & Figma"
   },
   {
-    id: "travelgo-travel-system",
+    id: "dhaka-metro-testing",
     number: "07",
+    title: "Dhaka Metro Rail – SQA Selenium Test Automation",
+    subtitle: "Formal Software Test Plan, Automated Selenium Workflows & MySQL Verification",
+    category: "Software Testing",
+    allCategories: ["Software Testing", "Web Applications"],
+    primarySource: "SQA Test Plan & Automation Suite",
+    technologies: ["Selenium IDE", "Software Test Plan", "Test Case Design", "Boundary-Value Analysis", "phpMyAdmin", "MySQL", "PHP"],
+    description: "A formal software quality assurance repository and Software Test Plan documenting UI test automation and functional verification for the Dhaka Metro Rail platform.",
+    longDescription:
+      "Dedicated SQA test automation repository and formal Software Test Plan (STP) for the Dhaka Metro Rail Ticketing platform. Performed manual functional testing and automated UI regression testing using Selenium IDE across passenger authentication, profile management, route fare calculation, ticket booking, payment verification, and admin/staff operations. Designed structured test cases with detailed pass/fail criteria, verified database state changes directly via phpMyAdmin MySQL tables, and documented testing schedules, deliverables, and risk mitigation strategies in a formal testing document.",
+    features: [
+      "Authored a formal Software Test Plan (STP) covering test scope, approach, deliverables, pass/fail metrics, and risk management",
+      "Created and executed automated UI regression testing suites in Selenium IDE for rapid workflow validation",
+      "Designed and executed manual functional test cases covering positive, negative, and boundary-value edge cases",
+      "Validated end-to-end role workflows across Passenger, Staff, and Administrator permissions",
+      "Performed database verification in phpMyAdmin to validate transactional integrity and data consistency",
+      "Conducted cross-browser compatibility and UI responsiveness testing across desktop and mobile devices"
+    ],
+    architectureHighlights: [
+      "Selenium IDE Automated UI Regression Test Suites & Replay Scripts",
+      "Formal Software Test Plan (STP) Specification & Deliverables",
+      "Relational MySQL Schema Verification & Transaction Checks via phpMyAdmin",
+      "Dedicated SQA GitHub Repository: https://github.com/SadiaTabas/Dhaka-Metro-Testing",
+      "Target Live System Deployed on Vercel: https://metro-rail-dhaka.vercel.app"
+    ],
+    githubUrl: "https://github.com/SadiaTabas/Dhaka-Metro-Testing",
+    liveUrl: "https://metro-rail-dhaka.vercel.app",
+    isClientProject: false,
+    imagePlaceholderText: "Dhaka Metro SQA Test Automation UI"
+  },
+  {
+    id: "travelgo-travel-system",
+    number: "08",
     title: "TravelGo – Travel Management System",
     subtitle: "Desktop Travel Planning, Multi-Modal Transport & Booking Engine",
     category: "Web Applications",
@@ -246,7 +281,7 @@ export const projectsData: Project[] = [
   },
   {
     id: "akhter-properties",
-    number: "08",
+    number: "09",
     title: "Akhter Properties Ltd.",
     subtitle: "Corporate Real Estate Platform with Dynamic SEO & Offline Map Support",
     category: "Full-Stack Development",
@@ -277,7 +312,7 @@ export const projectsData: Project[] = [
   },
   {
     id: "rock-energy",
-    number: "09",
+    number: "10",
     title: "Rock Energy Ltd.",
     subtitle: "Corporate Portal & Commercial E-Commerce Platform",
     category: "Full-Stack Development",
@@ -308,7 +343,7 @@ export const projectsData: Project[] = [
   },
   {
     id: "concord-ready-mix",
-    number: "10",
+    number: "11",
     title: "Concord Ready Mix & Concrete Products",
     subtitle: "Enterprise Concrete Solutions Website, REST Integrations & Telemetry",
     category: "Web Applications",
@@ -338,7 +373,7 @@ export const projectsData: Project[] = [
   },
   {
     id: "ace-advisory",
-    number: "11",
+    number: "12",
     title: "ACE Advisory",
     subtitle: "Corporate Regulatory Portal & Business Compliance Interface",
     category: "Web Applications",
@@ -366,7 +401,7 @@ export const projectsData: Project[] = [
   },
   {
     id: "solution-360",
-    number: "12",
+    number: "13",
     title: "Solution 360",
     subtitle: "Client Platform Production Testing & Quality Assurance Verification",
     category: "Software Testing",
@@ -377,6 +412,7 @@ export const projectsData: Project[] = [
     longDescription:
       "As recorded in the SQT CV, Solution 360 was one of the production client platforms audited for quality, security, and usability. Validated form workflows, verified REST API integrations with Postman, conducted accessibility reviews via Lighthouse, and monitored user session telemetry with Microsoft Clarity.",
     features: [
+      "Live production platform audited and verified at https://solution360-bd.com/",
       "Comprehensive manual functional and regression testing across key user journeys",
       "RESTful API contract validation using Postman collection runner",
       "Lighthouse accessibility and performance audits ensuring WCAG compliance",
@@ -384,11 +420,13 @@ export const projectsData: Project[] = [
       "Microsoft Clarity behavioral analytics tracking for UI friction points"
     ],
     architectureHighlights: [
+      "Live Production Platform: https://solution360-bd.com/",
       "Structured SQA Test Case Matrix & Bug Verification",
       "Postman Automated API Verification Suites",
       "Lighthouse Accessibility & WCAG Performance Auditing",
       "User Session Telemetry Analysis via Microsoft Clarity"
     ],
+    liveUrl: "https://solution360-bd.com/",
     isClientProject: true,
     imagePlaceholderText: "Solution 360 QA Audit Suite"
   }

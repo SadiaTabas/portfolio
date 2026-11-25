@@ -161,7 +161,7 @@ export default function Footer() {
           <p>© 2026 Tabassum Aktar Sadia. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <span className="text-[11px] text-[#555555]">
-              Designed with Warm Ivory, Charcoal & Vibrant Orange
+              Driven by curiosity, powered by code, and focused on building meaningful digital experiences.
             </span>
             <button
               onClick={scrollToTop}

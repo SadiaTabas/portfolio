@@ -179,7 +179,8 @@ export const clientPlatforms: ClientPlatform[] = [
       "Built modules for product CRUD, category assignment, stock tracking, and Excel bulk importing.",
       "Engineered order management workflows including payment records, outstanding balance calculation, and rider assignment.",
       "Designed administrative dashboard with live KPI counters, pending orders, and low-stock alerts."
-    ]
+    ],
+    liveUrl: "https://sd-inventory.vercel.app/"
   },
   {
     id: "solution-360",
@@ -193,6 +194,7 @@ export const clientPlatforms: ClientPlatform[] = [
       "Executed end-to-end regression and functional test cases across key business flows.",
       "Validated form inputs, edge-case handling, and API responses using Postman.",
       "Audited accessibility benchmarks and layout responsiveness across viewport breakpoints."
-    ]
+    ],
+    liveUrl: "https://solution360-bd.com/"
   }
 ];

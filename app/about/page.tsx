@@ -28,8 +28,7 @@ export default function AboutPage() {
               </h1>
             </div>
             <p className="text-sm text-[#666666] max-w-md leading-relaxed">
-              Consolidating full-stack web engineering, backend API architecture, and rigorous software quality assurance into reliable digital applications.
-            </p>
+              Bringing together full-stack development, backend engineering, API integration, and technical SEO to build reliable, efficient, and user-focused web applications.            </p>
           </div>
         </div>
       </section>
@@ -40,12 +39,12 @@ export default function AboutPage() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-            
+
             {/* Left Column: Portrait & Decorative Accents (5 Cols) */}
             <div className="lg:col-span-5 relative flex justify-center">
               {/* Orange backdrop frame */}
               <div className="absolute w-[290px] sm:w-[350px] h-[370px] sm:h-[450px] bg-[#FF8500] rounded-2xl -rotate-3 transition-transform duration-500 hover:rotate-0" />
-              
+
               {/* Orange Geometric Line Accents */}
               <div className="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-[#FF8500]" />
               <div className="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-[#FF8500]" />
@@ -199,7 +198,7 @@ export default function AboutPage() {
       <section className="py-20 bg-white border-t border-[#E3DDD6]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
+
             <div className="lg:col-span-5">
               <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#FF8500] block mb-2">
                 PERSONAL DRIVE & PASSION

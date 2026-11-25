@@ -31,17 +31,26 @@ export default function ClientCards() {
                 <span className="text-[10px] font-bold uppercase tracking-wider text-[#FF8500] bg-[#FFF2E5] px-2.5 py-1 rounded-md">
                   {client.category}
                 </span>
-                {client.liveUrl && (
-                  <a
-                    href={client.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-1.5 rounded-full bg-[#F3EEEA] text-[#171717] hover:bg-[#FF8500] hover:text-white transition-colors"
-                    aria-label={`Visit live site for ${client.name}`}
-                  >
-                    <ArrowUpRight className="w-3.5 h-3.5" />
-                  </a>
-                )}
+                <div className="flex items-center gap-2">
+                  {client.liveUrl && (
+                    <span className="text-[10px] font-extrabold uppercase tracking-wider bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full flex items-center gap-1">
+                      <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
+                      LIVE
+                    </span>
+                  )}
+                  {client.liveUrl && (
+                    <a
+                      href={client.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-1.5 rounded-full bg-[#F3EEEA] text-[#171717] hover:bg-[#FF8500] hover:text-white transition-colors"
+                      aria-label={`Visit live site for ${client.name}`}
+                      title={`Visit ${client.liveUrl}`}
+                    >
+                      <ArrowUpRight className="w-3.5 h-3.5" />
+                    </a>
+                  )}
+                </div>
               </div>
 
               <h3 className="text-lg font-extrabold text-[#171717] tracking-tight mb-1">
@@ -81,8 +90,19 @@ export default function ClientCards() {
                     ))}
                   </ul>
 
-                  {client.portalUrl && (
-                    <div className="mt-3 pt-2">
+                  <div className="mt-3 pt-2 flex flex-wrap items-center gap-3">
+                    {client.liveUrl && (
+                      <a
+                        href={client.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-xs font-bold text-[#FF8500] hover:underline"
+                      >
+                        <ExternalLink className="w-3.5 h-3.5" />
+                        <span>Visit Live Site ({client.liveUrl.replace('https://', '').replace(/\/$/, '')})</span>
+                      </a>
+                    )}
+                    {client.portalUrl && (
                       <a
                         href={client.portalUrl}
                         target="_blank"
@@ -92,8 +112,8 @@ export default function ClientCards() {
                         <Globe className="w-3.5 h-3.5" />
                         <span>Access Production Portal</span>
                       </a>
-                    </div>
-                  )}
+                    )}
+                  </div>
                 </div>
               )}
             </div>

@@ -12,7 +12,7 @@ export const cvDiscrepancies: CVDiscrepancyFlag[] = [
       { label: "CGPA 3.97 / 4.00", value: "3.97", source: "Official Academic Record (AIUB)" }
     ],
     currentSelected: "3.97",
-    note: "Official Academic Standing: CGPA 3.97 / 4.00 at AIUB."
+    note: "Recognized for consistent academic achievement."
   },
   {
     field: "Internship Title",

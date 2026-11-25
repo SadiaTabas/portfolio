@@ -239,6 +239,19 @@ export default function ProjectsList() {
                     </a>
                   )}
 
+                  {project.testingRepoUrl && (
+                    <a
+                      href={project.testingRepoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 rounded-full bg-[#FFF2E5] text-[#FF8500] hover:bg-[#FF8500] hover:text-white transition-colors"
+                      title="Selenium SQA Automation & Testing Document"
+                      aria-label="Selenium SQA Automation & Testing Document"
+                    >
+                      <Shield className="w-3.5 h-3.5" />
+                    </a>
+                  )}
+
                   {project.figmaUrl && (
                     <a
                       href={project.figmaUrl}
@@ -418,6 +431,19 @@ export default function ProjectsList() {
                     >
                       <Github className="w-4 h-4" />
                       <span>View GitHub Repository</span>
+                    </a>
+                  )}
+
+                  {activeModalProject.testingRepoUrl && (
+                    <a
+                      href={activeModalProject.testingRepoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#FFF2E5] text-[#FF8500] border border-[#FF8500]/30 text-xs font-bold uppercase tracking-wider hover:bg-[#FF8500] hover:text-white transition-colors"
+                    >
+                      <Shield className="w-4 h-4" />
+                      <span>Selenium SQA Testing Repo</span>
+                      <ExternalLink className="w-3.5 h-3.5" />
                     </a>
                   )}
 

@@ -15,10 +15,10 @@ export default function DiscrepancyNotice() {
             i
           </span>
           <span className="font-semibold text-[#171717]">
-            Source Documentation Notice:
+            PORTFOLIO OVERVIEW:
           </span>
           <span className="text-[#666666]">
-            Verified from official curriculum vitae and academic records.
+            A reflection of my academic background, technical expertise, and practical experience.
           </span>
         </div>
 

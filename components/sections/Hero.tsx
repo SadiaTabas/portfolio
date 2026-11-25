@@ -29,14 +29,14 @@ export default function Hero() {
 
             {/* Oversized Editorial Heading */}
             <h1 className="editorial-heading text-4xl sm:text-6xl xl:text-7xl text-[#171717] tracking-tight mb-6">
-              <span className="block leading-[0.92]">BUILDING DIGITAL</span>
-              <span className="block leading-[0.92]">EXPERIENCES</span>
+              <span className="block leading-[0.92]">TURNING IDEAS</span>
+              <span className="block leading-[0.92]">INTO</span>
               <span className="block leading-[0.92]">
                 <span className="text-[#FF8500] relative inline-block">
-                  THAT
+                  POWERFUL
                   <span className="absolute -bottom-1 left-0 right-0 h-1.5 bg-[#FF8500]/30 rounded-full" />
                 </span>{" "}
-                WORK.
+                WEB EXPERIENCES
               </span>
             </h1>
 

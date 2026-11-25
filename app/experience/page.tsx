@@ -58,7 +58,8 @@ export default function ExperiencePage() {
                 {internshipInfo.primaryTitle}
               </h2>
               <p className="text-sm font-bold text-[#FF8500] mt-1">
-                Also documented as: {internshipInfo.secondaryTitle}
+
+
               </p>
               <h3 className="text-lg font-bold text-[#444444] mt-2">
                 {internshipInfo.company}
